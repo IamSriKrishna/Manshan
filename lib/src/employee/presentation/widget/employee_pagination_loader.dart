@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class EmployeePaginationLoader extends StatelessWidget {
+  const EmployeePaginationLoader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 20.h),
+      child: Center(
+        child: SizedBox(
+          width: 22.r,
+          height: 22.r,
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFF6C63FF)),
+          ),
+        ),
+      ),
+    );
+  }
+}
